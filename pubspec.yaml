@@ -1,0 +1,28 @@
+name: intl_phone_input
+description: >-
+  International phone number field with as-you-type formatting, paste
+  detection, libphonenumber validation and a searchable en/fr/ar country picker.
+version: 0.1.0
+homepage: https://abdeldjalilchougui.biz/
+repository: https://github.com/AbeldjalilChougui/intl_phone_input
+issue_tracker: https://github.com/AbeldjalilChougui/intl_phone_input/issues
+topics:
+  - phone
+  - phone-number
+  - form
+  - input
+  - i18n
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  phone_numbers_parser: ^9.0.26
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
