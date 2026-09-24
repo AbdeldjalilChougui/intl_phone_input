@@ -72,9 +72,11 @@ Future<void> main() async {
     ..writeln('/// Country names by locale, then by ISO 3166-1 alpha-2 code.')
     ..writeln('///')
     ..writeln('/// The first name is the CLDR display name. Any further names')
-    ..writeln('/// are CLDR alternative forms (short or variant), used only for')
+    ..writeln(
+        '/// are CLDR alternative forms (short or variant), used only for')
     ..writeln('/// search.')
-    ..writeln('const Map<String, Map<String, List<String>>> cldrCountryNames = {');
+    ..writeln(
+        'const Map<String, Map<String, List<String>>> cldrCountryNames = {');
   for (final locale in locales) {
     final names = data[locale]!;
     out.writeln("  '$locale': {");
