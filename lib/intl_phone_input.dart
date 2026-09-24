@@ -8,3 +8,6 @@ export 'src/phone_editor.dart';
 export 'src/phone_type.dart';
 export 'src/phone_value.dart';
 export 'src/search.dart';
+export 'src/country_picker.dart';
+export 'src/intl_phone_input.dart';
+export 'src/strings.dart';
