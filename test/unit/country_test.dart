@@ -36,6 +36,8 @@ void main() {
       expect(plusOne, containsAll(<String>['US', 'CA', 'PR', 'JM']));
       final plusSeven = PhoneCountries.byDialCode('+7').map((c) => c.isoCode);
       expect(plusSeven, unorderedEquals(<String>['RU', 'KZ']));
+      expect(PhoneCountries.byDialCode('44').map((c) => c.isoCode),
+          containsAll(<String>['GB', 'GG', 'JE', 'IM']));
       expect(PhoneCountries.mainForDialCode('1')!.isoCode, 'US');
       expect(PhoneCountries.mainForDialCode('7')!.isoCode, 'RU');
     });
